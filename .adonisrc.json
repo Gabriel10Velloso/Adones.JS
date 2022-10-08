@@ -2,7 +2,7 @@
   "typescript": true,
   "commands": [
     "./commands",
-    "@adonisjs/core/build/commands/index.js",
+    "@adonisjs/core/commands",
     "@adonisjs/repl/build/commands",
     "@adonisjs/lucid/build/commands"
   ],
@@ -24,19 +24,5 @@
   ],
   "aceProviders": [
     "@adonisjs/repl"
-  ],
-  "tests": {
-    "suites": [
-      {
-        "name": "functional",
-        "files": [
-          "tests/functional/**/*.spec(.ts|.js)"
-        ],
-        "timeout": 60000
-      }
-    ]
-  },
-  "testProviders": [
-    "@japa/preset-adonis/TestsProvider"
   ]
 }

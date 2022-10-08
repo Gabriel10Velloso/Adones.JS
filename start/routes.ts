@@ -18,19 +18,11 @@
 |
 */
 
-import { Response } from '@adonisjs/core/build/standalone'
 import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/', async () => {
   return { hello: 'world' }
 })
 
-// Route.post('/users', async ({response}) => {
-//   return response.created({}) // testando uma rota
-// })
-
-// Route.post('/users', async ({response}) => {
-//   return response.created({})
-// })
-
 Route.post('/users', 'UsersController.store')
+Route.put('/users/:id', 'UsersController.update')

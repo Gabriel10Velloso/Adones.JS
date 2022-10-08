@@ -3,68 +3,41 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node ace serve --watch",
     "build": "node ace build --production",
     "start": "node server.js",
+    "dev": "node ace serve --watch",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write .",
-    "test": "node -r @adonisjs/assembler/build/register"
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:adonis/typescriptApp",
-      "prettier"
-    ],
-    "plugins": [
-      "prettier"
-    ],
-    "rules": {
-      "prettier/prettier": [
-        "error"
-      ]
-    }
-  },
-  "eslintIgnore": [
-    "build"
-  ],
-  "prettier": {
-    "trailingComma": "es5",
-    "semi": false,
-    "singleQuote": true,
-    "useTabs": false,
-    "quoteProps": "consistent",
-    "bracketSpacing": true,
-    "arrowParens": "always",
-    "printWidth": 100
+    "test": "node -r @adonisjs/assembler/build/register japaFile.ts"
   },
   "devDependencies": {
-    "@adonisjs/assembler": "^5.9.3",
-    "@japa/preset-adonis": "^1.2.0",
-    "@japa/runner": "^2.2.1",
-    "@types/supertest": "^2.0.12",
+    "@adonisjs/assembler": "^5.0.0",
+    "@types/supertest": "^2.0.11",
     "adonis-preset-ts": "^2.1.0",
-    "eslint": "^8.25.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-adonis": "^2.1.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "execa": "^6.1.0",
-    "get-port": "^6.1.2",
-    "japa": "^4.0.0",
-    "pino-pretty": "^9.1.1",
-    "prettier": "^2.7.1",
-    "sqlite3": "^5.1.2",
-    "supertest": "^6.3.0",
-    "typescript": "~4.6",
-    "youch": "^3.2.2",
-    "youch-terminal": "^2.1.5"
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-adonis": "^1.3.3",
+    "eslint-plugin-prettier": "^3.4.0",
+    "execa": "^5.1.1",
+    "get-port": "^5.1.1",
+    "japa": "^3.1.1",
+    "pino-pretty": "^5.1.2",
+    "prettier": "^2.3.2",
+    "sqlite3": "^5.0.2",
+    "supertest": "^6.1.3",
+    "typescript": "~4.2",
+    "youch": "^2.2.2",
+    "youch-terminal": "^1.1.1"
   },
   "dependencies": {
-    "@adonisjs/core": "^5.8.7",
-    "@adonisjs/lucid": "^18.2.0",
-    "@adonisjs/repl": "^3.1.11",
-    "luxon": "^3.0.4",
+    "@adonisjs/core": "^5.1.0",
+    "@adonisjs/lucid": "^15.0.3",
+    "@adonisjs/repl": "^3.0.0",
+    "global": "^4.4.0",
+    "node-gyp": "^8.1.0",
+    "phc-argon2": "^1.1.2",
     "proxy-addr": "^2.0.7",
     "reflect-metadata": "^0.1.13",
-    "source-map-support": "^0.5.21"
+    "source-map-support": "^0.5.19"
   }
 }
